@@ -3,544 +3,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>United Painters Worldwide | National Painting Workforce & Contract Execution</title>
 
-  <style>
-    * {
-      box-sizing: border-box;
-    }
+  <title>United Painters Worldwide | National Painting Workforce & Project Support</title>
+  <meta name="description" content="United Painters Worldwide provides commercial painting, contractor crew support, painter recruiting, training, and project execution for construction, property, and event projects." />
 
-    :root {
-      --navy: #102a43;
-      --blue: #1f6feb;
-      --blue-dark: #174ea6;
-      --gold: #f4b400;
-      --bg: #f4f7fb;
-      --surface: #ffffff;
-      --text: #1f2937;
-      --muted: #667085;
-      --line: #d9e2ec;
-      --dark: #0b1727;
-      --shadow: 0 18px 45px rgba(16, 42, 67, 0.12);
-      --radius: 22px;
-      --container: 1180px;
-    }
-
-    body {
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-      background: var(--bg);
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(var(--container), 92%);
-      margin: 0 auto;
-    }
-
-    .site-header {
-      background: rgba(255, 255, 255, 0.96);
-      backdrop-filter: blur(16px);
-      border-bottom: 1px solid var(--line);
-      position: sticky;
-      top: 0;
-      z-index: 50;
-    }
-
-    .nav {
-      min-height: 92px;
-      padding: 12px 0;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
-
-    .brand {
-      display: flex;
-      align-items: center;
-      flex: 0 1 340px;
-      min-width: 0;
-    }
-
-    .brand-logo {
-      width: min(330px, 42vw);
-      max-height: 66px;
-      height: auto;
-      display: block;
-      object-fit: contain;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 24px;
-      color: #344054;
-      font-size: 0.92rem;
-      font-weight: 800;
-      white-space: nowrap;
-    }
-
-    .nav-links a:hover {
-      color: var(--blue);
-    }
-
-    .nav-cta {
-      padding: 12px 18px;
-      border-radius: 999px;
-      background: var(--blue);
-      color: white !important;
-      box-shadow: 0 10px 22px rgba(31, 111, 235, 0.22);
-    }
-
-    .hero {
-      position: relative;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at top right, rgba(244, 180, 0, 0.22), transparent 28%),
-        linear-gradient(135deg, #ffffff 0%, #edf4ff 52%, #dfeaff 100%);
-      padding: 92px 0 70px;
-    }
-
-    .hero-grid {
-      display: grid;
-      grid-template-columns: 1.08fr 0.92fr;
-      gap: 54px;
-      align-items: center;
-    }
-
-    .eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 10px;
-      padding: 8px 14px;
-      border-radius: 999px;
-      background: rgba(31, 111, 235, 0.1);
-      color: var(--blue-dark);
-      font-size: 0.78rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      margin-bottom: 18px;
-    }
-
-    .hero h1 {
-      margin: 0;
-      color: var(--navy);
-      font-size: clamp(2.55rem, 6vw, 5rem);
-      line-height: 0.98;
-      letter-spacing: -0.07em;
-    }
-
-    .hero h1 span {
-      color: var(--blue);
-    }
-
-    .hero-text {
-      margin: 24px 0 0;
-      color: #475467;
-      font-size: 1.16rem;
-      max-width: 660px;
-    }
-
-    .hero-actions {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 14px;
-      margin-top: 34px;
-    }
-
-    .btn {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center;
-      padding: 15px 22px;
-      border-radius: 999px;
-      font-weight: 900;
-      transition: 0.2s ease;
-    }
-
-    .btn-primary {
-      background: var(--blue);
-      color: white;
-      box-shadow: 0 14px 26px rgba(31, 111, 235, 0.25);
-    }
-
-    .btn-primary:hover {
-      background: var(--blue-dark);
-      transform: translateY(-2px);
-    }
-
-    .btn-secondary {
-      background: white;
-      color: var(--navy);
-      border: 1px solid var(--line);
-    }
-
-    .btn-secondary:hover {
-      transform: translateY(-2px);
-      box-shadow: var(--shadow);
-    }
-
-    .trust-row {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 14px;
-      margin-top: 38px;
-      max-width: 660px;
-    }
-
-    .trust-card {
-      background: rgba(255,255,255,0.78);
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 16px;
-    }
-
-    .trust-card strong {
-      display: block;
-      color: var(--navy);
-      font-size: 1.35rem;
-      line-height: 1;
-      margin-bottom: 6px;
-    }
-
-    .trust-card span {
-      color: var(--muted);
-      font-size: 0.88rem;
-      font-weight: 700;
-    }
-
-    .hero-card {
-      background: var(--dark);
-      border-radius: 34px;
-      padding: 26px;
-      box-shadow: var(--shadow);
-      color: white;
-      position: relative;
-      overflow: hidden;
-    }
-
-    .hero-card::before {
-      content: "";
-      position: absolute;
-      width: 220px;
-      height: 220px;
-      right: -80px;
-      top: -80px;
-      background: rgba(244, 180, 0, 0.22);
-      border-radius: 50%;
-    }
-
-    .job-card {
-      position: relative;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.14);
-      border-radius: 24px;
-      padding: 24px;
-      margin-bottom: 16px;
-    }
-
-    .job-card h3 {
-      margin: 0 0 10px;
-      font-size: 1.55rem;
-      letter-spacing: -0.03em;
-    }
-
-    .job-card p {
-      color: rgba(255,255,255,0.72);
-      margin: 0;
-    }
-
-    .status-list {
-      display: grid;
-      gap: 12px;
-      margin-top: 22px;
-    }
-
-    .status-item {
-      display: flex;
-      justify-content: space-between;
-      gap: 16px;
-      background: rgba(255,255,255,0.08);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: 16px;
-      padding: 14px 16px;
-      font-weight: 800;
-    }
-
-    .status-item span:last-child {
-      color: var(--gold);
-    }
-
-    section {
-      padding: 78px 0;
-    }
-
-    .section-heading {
-      text-align: center;
-      max-width: 780px;
-      margin: 0 auto 44px;
-    }
-
-    .section-heading h2 {
-      margin: 0;
-      color: var(--navy);
-      font-size: clamp(2rem, 4vw, 3.1rem);
-      line-height: 1.05;
-      letter-spacing: -0.06em;
-    }
-
-    .section-heading p {
-      color: var(--muted);
-      font-size: 1.08rem;
-      margin: 18px 0 0;
-    }
-
-    .service-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 22px;
-    }
-
-    .service-card {
-      background: var(--surface);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 28px;
-      box-shadow: 0 10px 26px rgba(16, 42, 67, 0.06);
-    }
-
-    .icon {
-      width: 48px;
-      height: 48px;
-      border-radius: 16px;
-      background: rgba(31, 111, 235, 0.1);
-      display: grid;
-      place-items: center;
-      color: var(--blue);
-      font-size: 1.35rem;
-      margin-bottom: 18px;
-    }
-
-    .service-card h3 {
-      color: var(--navy);
-      margin: 0 0 10px;
-      font-size: 1.25rem;
-      letter-spacing: -0.03em;
-    }
-
-    .service-card p {
-      color: var(--muted);
-      margin: 0;
-    }
-
-    .dark-section {
-      background: var(--dark);
-      color: white;
-    }
-
-    .dark-section .section-heading h2 {
-      color: white;
-    }
-
-    .dark-section .section-heading p {
-      color: rgba(255,255,255,0.7);
-    }
-
-    .process-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 18px;
-    }
-
-    .process-card {
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.12);
-      border-radius: var(--radius);
-      padding: 24px;
-    }
-
-    .step-num {
-      width: 38px;
-      height: 38px;
-      border-radius: 50%;
-      background: var(--gold);
-      color: var(--dark);
-      display: grid;
-      place-items: center;
-      font-weight: 900;
-      margin-bottom: 18px;
-    }
-
-    .process-card h3 {
-      margin: 0 0 10px;
-    }
-
-    .process-card p {
-      color: rgba(255,255,255,0.68);
-      margin: 0;
-    }
-
-    .split {
-      display: grid;
-      grid-template-columns: 0.95fr 1.05fr;
-      gap: 46px;
-      align-items: center;
-    }
-
-    .split h2 {
-      margin: 0;
-      color: var(--navy);
-      font-size: clamp(2rem, 4vw, 3rem);
-      line-height: 1.06;
-      letter-spacing: -0.06em;
-    }
-
-    .split p {
-      color: var(--muted);
-      font-size: 1.05rem;
-    }
-
-    .bullet-list {
-      display: grid;
-      gap: 14px;
-      margin-top: 24px;
-    }
-
-    .bullet {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 16px;
-      padding: 16px 18px;
-      display: flex;
-      gap: 12px;
-      align-items: flex-start;
-      box-shadow: 0 8px 20px rgba(16, 42, 67, 0.05);
-    }
-
-    .check {
-      color: var(--blue);
-      font-weight: 900;
-    }
-
-    .industries {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 16px;
-    }
-
-    .industry {
-      background: white;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      padding: 20px;
-      font-weight: 900;
-      color: var(--navy);
-      text-align: center;
-    }
-
-    .cta {
-      padding: 82px 0;
-      background:
-        radial-gradient(circle at bottom left, rgba(244, 180, 0, 0.28), transparent 30%),
-        linear-gradient(135deg, var(--blue), var(--navy));
-      color: white;
-      text-align: center;
-    }
-
-    .cta h2 {
-      margin: 0;
-      font-size: clamp(2rem, 4vw, 3.4rem);
-      line-height: 1.05;
-      letter-spacing: -0.06em;
-    }
-
-    .cta p {
-      color: rgba(255,255,255,0.82);
-      max-width: 720px;
-      margin: 18px auto 30px;
-      font-size: 1.08rem;
-    }
-
-    .cta .btn {
-      background: white;
-      color: var(--navy);
-    }
-
-    .site-footer {
-      background: #07111f;
-      color: rgba(255,255,255,0.72);
-      padding: 34px 0;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      flex-wrap: wrap;
-      align-items: center;
-    }
-
-    .footer-brand {
-      color: white;
-      font-weight: 900;
-    }
-
-    @media (max-width: 1020px) {
-      .nav-links {
-        gap: 14px;
-        font-size: 0.84rem;
-      }
-
-      .brand-logo {
-        width: min(280px, 38vw);
-      }
-    }
-
-    @media (max-width: 900px) {
-      .nav {
-        min-height: 76px;
-        padding: 12px 0;
-        align-items: center;
-      }
-
-      .brand {
-        flex: 1 1 auto;
-      }
-
-      .brand-logo {
-        width: min(255px, 72vw);
-        max-height: 52px;
-      }
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero-grid,
-      .split {
-        grid-template-columns: 1fr;
-      }
-
-      .trust-row,
-      .service-grid,
-      .process-grid,
-      .industries {
-        grid-template-columns: 1fr;
-      }
-
-      .hero {
-        padding: 62px 0 50px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" href="css/styles.css" />
 </head>
 
 <body>
@@ -551,12 +18,14 @@
         <img class="brand-logo" src="images/logo.jpg" alt="United Painters Worldwide logo" />
       </a>
 
-      <nav class="nav-links">
-        <a href="#services">Services</a>
-        <a href="#contractors">For Contractors</a>
-        <a href="#process">Process</a>
-        <a href="#careers">Painters</a>
-        <a class="nav-cta" href="#contact">Request Crews</a>
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a class="active" href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="for-contractors.html">For Contractors</a>
+        <a href="process.html">Process</a>
+        <a href="painters.html">Painters</a>
+        <a class="nav-cta" href="request-a-quote.html">Request a Quote</a>
       </nav>
     </div>
   </header>
@@ -565,34 +34,39 @@
 
     <section class="hero">
       <div class="container hero-grid">
-        <div>
+        <div class="hero-copy">
           <div class="eyebrow">National Painting Workforce & Contract Execution</div>
 
-          <h1>Skilled painting crews. <span>Built to scale.</span></h1>
+          <h1>
+            Skilled painting crews.
+            <span>Built to scale.</span>
+          </h1>
 
           <p class="hero-text">
-            United Painters Worldwide helps construction firms, general contractors,
-            developers, facility managers, and event builders recruit, train, manage,
-            and deploy reliable painting crews for projects across the country.
+            United Painters Worldwide helps contractors, developers, facility managers,
+            property owners, and event builders get reliable painting support for projects
+            that need clean work, dependable crews, and professional execution.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Request Painting Crews</a>
-            <a class="btn btn-secondary" href="#services">Explore Services</a>
+            <a class="btn btn-primary" href="request-a-quote.html">Request Painting Crews</a>
+            <a class="btn btn-secondary" href="services.html">Explore Services</a>
           </div>
 
           <div class="trust-row">
             <div class="trust-card">
               <strong>23+</strong>
-              <span>Years Entrepreneurial Experience</span>
+              <span>Years entrepreneurial and field experience</span>
             </div>
+
             <div class="trust-card">
               <strong>National</strong>
-              <span>Project Support</span>
+              <span>Project support for multiple markets</span>
             </div>
+
             <div class="trust-card">
               <strong>Ready</strong>
-              <span>Crews, Training & Management</span>
+              <span>Recruiting, training, crews, and management</span>
             </div>
           </div>
         </div>
@@ -602,202 +76,131 @@
             <h3>Project Workforce Command Center</h3>
             <p>
               From sourcing painters to managing crews on active jobsites,
-              United Painters Worldwide gives contractors a dependable labor
+              United Painters Worldwide gives companies a dependable painting labor
               and execution partner.
             </p>
           </div>
 
           <div class="status-list">
             <div class="status-item">
-              <span>Recruitment</span>
+              <span>Commercial Painting</span>
+              <span>Available</span>
+            </div>
+
+            <div class="status-item">
+              <span>Recruiting</span>
               <span>Active</span>
             </div>
+
             <div class="status-item">
               <span>Training</span>
               <span>Jobsite Ready</span>
             </div>
+
             <div class="status-item">
               <span>Crew Management</span>
               <span>Scalable</span>
             </div>
-            <div class="status-item">
-              <span>Contract Execution</span>
-              <span>Nationwide</span>
-            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="services">
+    <section class="intro-section">
       <div class="container">
         <div class="section-heading">
-          <h2>Painting workforce solutions for serious projects.</h2>
+          <h2>Painting support for serious projects.</h2>
           <p>
-            We combine labor sourcing, training, field coordination, and contract execution
-            into one practical support system for construction and commercial painting work.
+            We serve customers who need more than a basic painter. We help organize the people,
+            process, and execution behind quality painting work.
           </p>
         </div>
 
-        <div class="service-grid">
-          <div class="service-card">
+        <div class="card-grid">
+          <article class="card">
             <div class="icon">🎨</div>
-            <h3>Commercial Painting</h3>
+            <h3>Painting Services</h3>
             <p>
-              Interior and exterior painting support for commercial buildings,
-              tenant improvements, renovations, and large-scale projects.
+              Interior painting, exterior painting, commercial repainting, residential repainting,
+              surface prep, trim, touch-ups, and finishing support.
             </p>
-          </div>
+          </article>
 
-          <div class="service-card">
+          <article class="card">
             <div class="icon">👷</div>
-            <h3>Painter Recruiting</h3>
+            <h3>Contractor Crew Support</h3>
             <p>
-              We help source qualified painters and build labor pipelines for contractors
-              that need dependable workers fast.
+              Scalable painting labor support for general contractors, developers, property managers,
+              facility owners, and construction teams.
             </p>
-          </div>
+          </article>
 
-          <div class="service-card">
-            <div class="icon">🧰</div>
-            <h3>Training & Onboarding</h3>
-            <p>
-              We prepare painters for jobsite expectations, safety standards,
-              production demands, and professional execution.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <div class="icon">📋</div>
-            <h3>Crew Management</h3>
-            <p>
-              Field coordination, communication, scheduling support, and accountability
-              systems to keep projects moving.
-            </p>
-          </div>
-
-          <div class="service-card">
-            <div class="icon">🏗️</div>
-            <h3>Construction Support</h3>
-            <p>
-              Painting labor and management support for general contractors,
-              developers, builders, and facility owners.
-            </p>
-          </div>
-
-          <div class="service-card">
+          <article class="card">
             <div class="icon">🏢</div>
-            <h3>Convention & Expo Support</h3>
+            <h3>Expo & Event Painting</h3>
             <p>
-              Fast-turnaround painting and labor support for trade shows,
-              convention builds, booths, exhibits, and event construction.
+              Fast-turnaround painting support for trade shows, convention builds, booths,
+              exhibits, event construction, and deadline-driven environments.
             </p>
-          </div>
+          </article>
         </div>
       </div>
     </section>
 
-    <section id="process" class="dark-section">
-      <div class="container">
-        <div class="section-heading">
-          <h2>How we support your project.</h2>
-          <p>
-            United Painters Worldwide is built for contractors who need reliable people,
-            clear communication, and results in the field.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <div class="process-card">
-            <div class="step-num">1</div>
-            <h3>Define the Project</h3>
-            <p>We identify your scope, timeline, location, labor needs, and jobsite requirements.</p>
-          </div>
-
-          <div class="process-card">
-            <div class="step-num">2</div>
-            <h3>Source the Crew</h3>
-            <p>We recruit and coordinate painters based on the skill level and scale required.</p>
-          </div>
-
-          <div class="process-card">
-            <div class="step-num">3</div>
-            <h3>Train & Deploy</h3>
-            <p>Workers are prepared for the project expectations, safety needs, and production goals.</p>
-          </div>
-
-          <div class="process-card">
-            <div class="step-num">4</div>
-            <h3>Manage Execution</h3>
-            <p>We support communication, accountability, and field coordination through completion.</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contractors">
+    <section class="dark-section">
       <div class="container split">
         <div>
-          <div class="eyebrow">For General Contractors & Builders</div>
-          <h2>A better way to scale painting labor.</h2>
+          <div class="eyebrow">Why United Painters Worldwide</div>
+          <h2>We help companies solve the painting labor problem.</h2>
           <p>
-            Finding dependable painters is one of the biggest bottlenecks in construction.
-            United Painters Worldwide gives contractors a flexible partner that understands
-            recruiting, field labor, production pressure, and customer expectations.
-          </p>
-
-          <p>
-            Whether you need support on one project or a repeatable national labor pipeline,
-            we help you move faster without sacrificing professionalism.
+            Finding reliable painters is one of the biggest challenges in construction,
+            property maintenance, commercial renovation, and event builds. United Painters
+            Worldwide is built to help organize labor, training, scheduling, and field execution.
           </p>
 
           <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Talk to Us</a>
+            <a class="btn btn-primary" href="for-contractors.html">For Contractors</a>
+            <a class="btn btn-secondary" href="painters.html">For Painters</a>
           </div>
         </div>
 
         <div class="bullet-list">
-          <div class="bullet">
+          <div class="bullet bullet-dark">
             <span class="check">✓</span>
-            <span>Scalable painting crews for commercial and construction projects.</span>
+            <span>Reliable crews for commercial and residential projects.</span>
           </div>
 
-          <div class="bullet">
+          <div class="bullet bullet-dark">
             <span class="check">✓</span>
             <span>Recruiting and labor pipeline support for hard-to-staff markets.</span>
           </div>
 
-          <div class="bullet">
+          <div class="bullet bullet-dark">
             <span class="check">✓</span>
-            <span>Training and jobsite preparation for painters entering active projects.</span>
+            <span>Field coordination designed around deadlines and accountability.</span>
           </div>
 
-          <div class="bullet">
+          <div class="bullet bullet-dark">
             <span class="check">✓</span>
-            <span>Field coordination designed around deadlines, quality, and accountability.</span>
-          </div>
-
-          <div class="bullet">
-            <span class="check">✓</span>
-            <span>Support for national contractors, developers, facilities, and event builders.</span>
+            <span>Support for construction, facilities, property, hospitality, and events.</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section class="industries-section">
       <div class="container">
         <div class="section-heading">
           <h2>Industries we serve.</h2>
           <p>
-            From construction sites to convention halls, we help companies execute painting work
-            where speed, professionalism, and workforce reliability matter.
+            From construction sites to convention halls, we help teams execute painting work
+            where speed, quality, and reliability matter.
           </p>
         </div>
 
         <div class="industries">
           <div class="industry">Commercial Construction</div>
-          <div class="industry">Residential Development</div>
+          <div class="industry">Residential Repaints</div>
           <div class="industry">Convention & Expo Builds</div>
           <div class="industry">Hotels & Hospitality</div>
           <div class="industry">Retail & Tenant Improvements</div>
@@ -808,43 +211,56 @@
       </div>
     </section>
 
-    <section id="careers" class="dark-section">
-      <div class="container split">
-        <div>
-          <div class="eyebrow">For Painters</div>
-          <h2>Join a painting network built for opportunity.</h2>
+    <section class="process-preview">
+      <div class="container">
+        <div class="section-heading">
+          <h2>A simple process built for action.</h2>
           <p>
-            United Painters Worldwide connects painters with project opportunities,
-            training pathways, and professional crews. If you take pride in your work,
-            show up ready, and want to grow, we want to hear from you.
+            Tell us the project, location, timeline, and labor needs. We help move the work forward.
           </p>
         </div>
 
-        <div class="service-card">
-          <h3>Painter Network</h3>
-          <p>
-            Apply to join our network for future painting projects, commercial jobs,
-            convention work, and construction opportunities.
-          </p>
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="step-num">1</div>
+            <h3>Define Scope</h3>
+            <p>We identify project size, surfaces, schedule, location, and crew requirements.</p>
+          </article>
 
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#contact">Apply to Join</a>
-          </div>
+          <article class="process-card">
+            <div class="step-num">2</div>
+            <h3>Plan Labor</h3>
+            <p>We determine the right crew size, skill level, and support structure.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="step-num">3</div>
+            <h3>Deploy Support</h3>
+            <p>We align painters and project support around the work that needs to be done.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="step-num">4</div>
+            <h3>Execute</h3>
+            <p>We focus on communication, accountability, deadlines, and completion.</p>
+          </article>
+        </div>
+
+        <div class="center-actions">
+          <a class="btn btn-primary" href="process.html">View Our Process</a>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="cta">
+    <section class="cta">
       <div class="container">
-        <h2>Need painting crews or project support?</h2>
+        <h2>Need painters or project support?</h2>
         <p>
-          Tell us what you are building, where the project is located, and how many painters
-          you need. United Painters Worldwide is ready to help you scale.
+          Send the project location, scope, deadline, and number of painters needed.
+          United Painters Worldwide is ready to help you scale.
         </p>
 
-        <a class="btn" href="mailto:Matt@UnitedPaintersWW.com">
-          Contact United Painters Worldwide
-        </a>
+        <a class="btn" href="request-a-quote.html">Request a Quote</a>
       </div>
     </section>
 
@@ -854,11 +270,13 @@
     <div class="container footer-inner">
       <div>
         <div class="footer-brand">United Painters Worldwide</div>
-        <div>National painting workforce, training, management, and contract execution.</div>
+        <div>Painting services, workforce support, training, crew management, and contract execution.</div>
       </div>
 
       <div>
-        © 2026 United Painters Worldwide, LLC. All rights reserved.
+        <a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a>
+        <span> · </span>
+        <a href="tel:+18656219810">(865) 621-9810</a>
       </div>
     </div>
   </footer>
