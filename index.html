@@ -45,7 +45,7 @@
     }
 
     .site-header {
-      background: rgba(255, 255, 255, 0.92);
+      background: rgba(255, 255, 255, 0.96);
       backdrop-filter: blur(16px);
       border-bottom: 1px solid var(--line);
       position: sticky;
@@ -54,7 +54,8 @@
     }
 
     .nav {
-      height: 82px;
+      min-height: 92px;
+      padding: 12px 0;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -64,33 +65,26 @@
     .brand {
       display: flex;
       align-items: center;
-      gap: 12px;
-      font-weight: 900;
-      color: var(--navy);
-      letter-spacing: -0.03em;
-      font-size: 1.2rem;
+      flex: 0 1 340px;
+      min-width: 0;
     }
 
-.brand-logo {
-  height: 58px;
-  width: auto;
-  display: block;
-  object-fit: contain;
-}
-
-@media (max-width: 700px) {
-  .brand-logo {
-    height: 42px;
-  }
-}
+    .brand-logo {
+      width: min(330px, 42vw);
+      max-height: 66px;
+      height: auto;
+      display: block;
+      object-fit: contain;
+    }
 
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 28px;
+      gap: 24px;
       color: #344054;
-      font-size: 0.95rem;
-      font-weight: 700;
+      font-size: 0.92rem;
+      font-weight: 800;
+      white-space: nowrap;
     }
 
     .nav-links a:hover {
@@ -499,11 +493,31 @@
       font-weight: 900;
     }
 
+    @media (max-width: 1020px) {
+      .nav-links {
+        gap: 14px;
+        font-size: 0.84rem;
+      }
+
+      .brand-logo {
+        width: min(280px, 38vw);
+      }
+    }
+
     @media (max-width: 900px) {
       .nav {
-        height: auto;
-        padding: 18px 0;
-        align-items: flex-start;
+        min-height: 76px;
+        padding: 12px 0;
+        align-items: center;
+      }
+
+      .brand {
+        flex: 1 1 auto;
+      }
+
+      .brand-logo {
+        width: min(255px, 72vw);
+        max-height: 52px;
       }
 
       .nav-links {
@@ -533,9 +547,9 @@
 
   <header class="site-header">
     <div class="container nav">
-     <a class="brand" href="index.html" aria-label="United Painters Worldwide Home">
-  <img class="brand-logo" src="images/logo.jpg" alt="United Painters Worldwide logo" />
-</a>
+      <a class="brand" href="index.html" aria-label="United Painters Worldwide Home">
+        <img class="brand-logo" src="images/logo.jpg" alt="United Painters Worldwide logo" />
+      </a>
 
       <nav class="nav-links">
         <a href="#services">Services</a>
@@ -697,33 +711,25 @@
           <div class="process-card">
             <div class="step-num">1</div>
             <h3>Define the Project</h3>
-            <p>
-              We identify your scope, timeline, location, labor needs, and jobsite requirements.
-            </p>
+            <p>We identify your scope, timeline, location, labor needs, and jobsite requirements.</p>
           </div>
 
           <div class="process-card">
             <div class="step-num">2</div>
             <h3>Source the Crew</h3>
-            <p>
-              We recruit and coordinate painters based on the skill level and scale required.
-            </p>
+            <p>We recruit and coordinate painters based on the skill level and scale required.</p>
           </div>
 
           <div class="process-card">
             <div class="step-num">3</div>
             <h3>Train & Deploy</h3>
-            <p>
-              Workers are prepared for the project expectations, safety needs, and production goals.
-            </p>
+            <p>Workers are prepared for the project expectations, safety needs, and production goals.</p>
           </div>
 
           <div class="process-card">
             <div class="step-num">4</div>
             <h3>Manage Execution</h3>
-            <p>
-              We support communication, accountability, and field coordination through completion.
-            </p>
+            <p>We support communication, accountability, and field coordination through completion.</p>
           </div>
         </div>
       </div>
@@ -836,7 +842,7 @@
           you need. United Painters Worldwide is ready to help you scale.
         </p>
 
-        <a class="btn" href="mailto:info@unitedpaintersworldwide.com">
+        <a class="btn" href="mailto:Matt@UnitedPaintersWW.com">
           Contact United Painters Worldwide
         </a>
       </div>
