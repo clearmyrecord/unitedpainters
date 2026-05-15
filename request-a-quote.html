@@ -1,1 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+  <title>Request a Quote | United Painters Worldwide</title>
+  <meta name="description" content="Request a painting quote from United Painters Worldwide for residential painting, commercial painting, contractor crew support, painter recruiting, and convention painting work." />
+
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="United Painters Worldwide Home">
+        <img class="brand-logo" src="images/logo.jpg" alt="United Painters Worldwide logo" />
+      </a>
+
+      <nav class="nav-links" aria-label="Main Navigation">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="for-contractors.html">For Contractors</a>
+        <a href="process.html">Process</a>
+        <a href="painters.html">Painters</a>
+        <a class="active nav-cta" href="request-a-quote.html">Request a Quote</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <div class="eyebrow">Request a Quote</div>
+        <h1>Tell us what you need <span>painted or staffed.</span></h1>
+        <p>
+          Send the project location, scope, timeline, and labor needs. United Painters Worldwide
+          can help with painting services, contractor crew support, painter recruiting,
+          convention work, and project execution.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <div class="container quote-layout">
+        <div class="quote-card">
+          <h2>Project Request Form</h2>
+          <p>
+            This form opens your email app with the project details. If it does not open,
+            email us directly at <a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a>.
+          </p>
+
+          <form class="quote-form" action="mailto:Matt@UnitedPaintersWW.com" method="post" enctype="text/plain">
+            <div class="form-grid">
+              <label>
+                Name
+                <input type="text" name="Name" placeholder="Your name" required />
+              </label>
+
+              <label>
+                Company
+                <input type="text" name="Company" placeholder="Company name" />
+              </label>
+
+              <label>
+                Email
+                <input type="email" name="Email" placeholder="you@example.com" required />
+              </label>
+
+              <label>
+                Phone
+                <input type="tel" name="Phone" placeholder="(865) 621-9810" />
+              </label>
+
+              <label>
+                Project Location
+                <input type="text" name="Project Location" placeholder="City, state, address, or jobsite" />
+              </label>
+
+              <label>
+                Project Type
+                <select name="Project Type">
+                  <option value="Residential Painting">Residential Painting</option>
+                  <option value="Commercial Painting">Commercial Painting</option>
+                  <option value="Contractor Crew Support">Contractor Crew Support</option>
+                  <option value="Painter Recruiting">Painter Recruiting</option>
+                  <option value="Convention / Expo Painting">Convention / Expo Painting</option>
+                  <option value="Property Management / Turns">Property Management / Turns</option>
+                  <option value="Other">Other</option>
+                </select>
+              </label>
+
+              <label>
+                Timeline
+                <input type="text" name="Timeline" placeholder="ASAP, this week, next month, deadline date" />
+              </label>
+
+              <label>
+                Estimated Crew Need
+                <input type="text" name="Estimated Crew Need" placeholder="Example: 2 painters, 6 painters, unknown" />
+              </label>
+
+              <label class="full">
+                Project Details
+                <textarea name="Project Details" placeholder="Tell us the scope, surfaces, square footage, prep needs, deadline, access details, materials, and anything else important."></textarea>
+              </label>
+            </div>
+
+            <button class="btn btn-primary" type="submit">Send Project Request</button>
+          </form>
+        </div>
+
+        <aside class="quote-sidebar">
+          <div class="feature-panel">
+            <h3>Contact Directly</h3>
+
+            <div class="mini-list">
+              <div>
+                <strong>Email</strong>
+                <span><a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a></span>
+              </div>
+
+              <div>
+                <strong>Phone</strong>
+                <span><a href="tel:+18656219810">(865) 621-9810</a></span>
+              </div>
+
+              <div>
+                <strong>Best For</strong>
+                <span>Painting quotes, contractor crew support, painter recruiting, and project execution.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="feature-panel">
+            <h3>Helpful Details</h3>
+
+            <div class="mini-list">
+              <div>
+                <strong>Location</strong>
+                <span>City, state, property, jobsite, or event venue.</span>
+              </div>
+
+              <div>
+                <strong>Scope</strong>
+                <span>Interior, exterior, commercial, residential, prep, trim, touch-up, or crew support.</span>
+              </div>
+
+              <div>
+                <strong>Deadline</strong>
+                <span>When the project starts and when it must be completed.</span>
+              </div>
+
+              <div>
+                <strong>Labor Need</strong>
+                <span>How many painters you think you need, if known.</span>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="dark-section">
+      <div class="container">
+        <div class="section-heading">
+          <h2>What happens after you request a quote?</h2>
+          <p>
+            We review the project details and identify the best next step based on the scope,
+            timeline, and labor need.
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <article class="process-card">
+            <div class="step-num">1</div>
+            <h3>We Review</h3>
+            <p>We look at location, project type, timeline, and the painting support needed.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="step-num">2</div>
+            <h3>We Clarify</h3>
+            <p>If needed, we ask for photos, measurements, scope details, or jobsite requirements.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="step-num">3</div>
+            <h3>We Plan</h3>
+            <p>We determine the right labor, schedule, prep needs, and support structure.</p>
+          </article>
+
+          <article class="process-card">
+            <div class="step-num">4</div>
+            <h3>We Execute</h3>
+            <p>We help move the work forward with painting services or crew support.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container">
+        <h2>Prefer to email directly?</h2>
+        <p>
+          Send your project details to Matt@UnitedPaintersWW.com or call (865) 621-9810.
+        </p>
+
+        <a class="btn" href="mailto:Matt@UnitedPaintersWW.com">Email United Painters Worldwide</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <div class="footer-brand">United Painters Worldwide</div>
+        <div>Painting services, workforce support, training, crew management, and contract execution.</div>
+      </div>
+
+      <div>
+        <a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a>
+        <span> · </span>
+        <a href="tel:+18656219810">(865) 621-9810</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
