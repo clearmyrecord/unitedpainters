@@ -18,7 +18,7 @@
       <img class="brand-logo" src="images/logo.jpg" alt="United Painters Worldwide logo" />
     </a>
 
-    <button class="mobile-menu-toggle" type="button" aria-label="Open menu">
+    <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
       ☰
     </button>
 
@@ -285,16 +285,20 @@
     </div>
   </footer>
   
-  <script>
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector(".mobile-menu-toggle");
     const navLinks = document.querySelector(".nav-links");
 
-    if (menuButton && navLinks) {
-      menuButton.addEventListener("click", function () {
-        navLinks.classList.toggle("open");
-      });
-    }
+    if (!menuButton || !navLinks) return;
+
+    menuButton.addEventListener("click", function () {
+      navLinks.classList.toggle("open");
+
+      const isOpen = navLinks.classList.contains("open");
+      menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+      menuButton.textContent = isOpen ? "×" : "☰";
+    });
   });
 </script>
 
