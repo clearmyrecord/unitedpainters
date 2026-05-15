@@ -704,55 +704,100 @@ textarea {
   }
 }
 
+.mobile-menu-toggle {
+  display: none;
+}
+
 @media (max-width: 900px) {
+  .site-header {
+    position: sticky;
+    top: 0;
+  }
+
   .nav {
-    min-height: auto;
-    padding: 14px 0;
-    flex-direction: column;
+    min-height: 72px;
+    padding: 10px 0;
+    flex-direction: row;
     align-items: center;
-    gap: 14px;
+    justify-content: space-between;
+    position: relative;
   }
 
   .brand {
-    justify-content: center;
-    width: 100%;
+    flex: 0 1 auto;
+    width: auto;
   }
 
   .brand-logo {
-    width: min(260px, 78vw);
-    max-height: 56px;
+    width: 170px;
+    max-height: 46px;
+  }
+
+  .mobile-menu-toggle {
+    display: flex;
+    width: 46px;
+    height: 46px;
+    border: 1px solid var(--line);
+    border-radius: 14px;
+    background: white;
+    color: var(--navy);
+    font-size: 1.45rem;
+    font-weight: 900;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 8px 18px rgba(16, 42, 67, 0.08);
   }
 
   .nav-links {
-    display: flex;
-    width: 100%;
-    overflow-x: auto;
-    gap: 10px;
-    padding: 4px 0 8px;
-    justify-content: flex-start;
-    scrollbar-width: none;
+    display: none !important;
+    position: absolute;
+    top: calc(100% + 10px);
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: white;
+    border: 1px solid var(--line);
+    border-radius: 18px;
+    padding: 10px;
+    box-shadow: var(--shadow);
+    flex-direction: column;
+    align-items: stretch;
+    gap: 8px;
+    overflow: visible;
   }
 
-  .nav-links::-webkit-scrollbar {
-    display: none;
+  .nav-links.open {
+    display: flex !important;
   }
 
   .nav-links a {
-    flex: 0 0 auto;
-    padding: 9px 12px;
-    border-radius: 999px;
+    display: block;
+    padding: 13px 14px;
+    border-radius: 12px;
     background: #f4f7fb;
     border: 1px solid var(--line);
-    font-size: 0.78rem;
+    font-size: 0.95rem;
+    font-weight: 900;
+    color: var(--navy);
+  }
+
+  .nav-links a.active {
+    color: var(--blue);
   }
 
   .nav-links .nav-cta {
     background: var(--blue);
     color: white !important;
+    text-align: center;
   }
 
   .hero {
-    padding: 62px 0 50px;
+    padding: 54px 0 46px;
+  }
+
+  .page-hero {
+    padding: 54px 0 44px;
   }
 
   .hero-grid,
