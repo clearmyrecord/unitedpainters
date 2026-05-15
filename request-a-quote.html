@@ -18,7 +18,7 @@
       <img class="brand-logo" src="images/logo.jpg" alt="United Painters Worldwide logo" />
     </a>
 
-    <button class="mobile-menu-toggle" type="button" aria-label="Open menu">
+    <button class="mobile-menu-toggle" type="button" aria-label="Open menu" aria-expanded="false">
       ☰
     </button>
 
@@ -29,293 +29,271 @@
       <a href="for-contractors.html">For Contractors</a>
       <a href="process.html">Process</a>
       <a href="painters.html">Painters</a>
-      <a class="nav-cta" href="request-a-quote.html">Request a Quote</a>
+      <a class="active nav-cta" href="request-a-quote.html">Request a Quote</a>
     </nav>
   </div>
 </header>
 
-  <main>
+<main>
 
-    <section class="page-hero">
-      <div class="container">
-        <div class="eyebrow">Request a Painting Quote</div>
-        <h1>Get a quote for your <span>painting project.</span></h1>
+  <section class="page-hero">
+    <div class="container">
+      <div class="eyebrow">Request a Painting Quote</div>
+      <h1>Get a quote for your <span>painting project.</span></h1>
+      <p>
+        Tell us what you need painted, where the project is located, and when you want it completed.
+        United Painters Worldwide helps homeowners, businesses, property managers, landlords,
+        builders, and project owners get reliable painting support.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <div class="container quote-layout">
+      <div class="quote-card">
+        <h2>Painting Quote Request</h2>
         <p>
-          Tell us what you need painted, where the project is located, and when you want it completed.
-          United Painters Worldwide helps homeowners, businesses, property managers, landlords,
-          builders, and project owners get reliable painting support.
-        </p>
-      </div>
-    </section>
-
-    <section>
-      <div class="container quote-layout">
-        <div class="quote-card">
-          <h2>Painting Quote Request</h2>
-          <p>
-            Use this form to request pricing for residential painting, commercial painting,
-            interior painting, exterior painting, property repaints, touch-ups, or larger project work.
-            If the form does not open your email app, email us directly at
-            <a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a>.
-          </p>
-
-          <form class="quote-form" action="mailto:Matt@UnitedPaintersWW.com" method="post" enctype="text/plain">
-            <div class="form-grid">
-              <label>
-                Name
-                <input type="text" name="Name" placeholder="Your name" required />
-              </label>
-
-              <label>
-                Phone
-                <input type="tel" name="Phone" placeholder="(865) 621-9810" />
-              </label>
-
-              <label>
-                Email
-                <input type="email" name="Email" placeholder="you@example.com" required />
-              </label>
-
-              <label>
-                Customer Type
-                <select name="Customer Type">
-                  <option value="Homeowner">Homeowner</option>
-                  <option value="Business Owner">Business Owner</option>
-                  <option value="Property Manager">Property Manager</option>
-                  <option value="Landlord / Investor">Landlord / Investor</option>
-                  <option value="General Contractor / Builder">General Contractor / Builder</option>
-                  <option value="Facility Manager">Facility Manager</option>
-                  <option value="Event / Expo Company">Event / Expo Company</option>
-                  <option value="Other">Other</option>
-                </select>
-              </label>
-
-              <label>
-                Project Location
-                <input type="text" name="Project Location" placeholder="City, state, address, or property location" />
-              </label>
-
-              <label>
-                Project Type
-                <select name="Project Type">
-                  <option value="Interior Painting">Interior Painting</option>
-                  <option value="Exterior Painting">Exterior Painting</option>
-                  <option value="Interior and Exterior Painting">Interior and Exterior Painting</option>
-                  <option value="Commercial Painting">Commercial Painting</option>
-                  <option value="Residential Painting">Residential Painting</option>
-                  <option value="Rental / Property Turn">Rental / Property Turn</option>
-                  <option value="Cabinets / Trim / Doors">Cabinets / Trim / Doors</option>
-                  <option value="Touch-Ups / Punch List">Touch-Ups / Punch List</option>
-                  <option value="Convention / Expo Painting">Convention / Expo Painting</option>
-                  <option value="Other">Other</option>
-                </select>
-              </label>
-
-              <label>
-                Approximate Size
-                <input type="text" name="Approximate Size" placeholder="Example: 2 bedrooms, 1,500 sq ft, office suite, exterior only" />
-              </label>
-
-              <label>
-                Desired Timeline
-                <input type="text" name="Desired Timeline" placeholder="ASAP, this week, next month, deadline date" />
-              </label>
-
-              <label>
-                Is the property occupied?
-                <select name="Occupied Property">
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
-                  <option value="Partially">Partially</option>
-                  <option value="Not Sure">Not Sure</option>
-                </select>
-              </label>
-
-              <label>
-                Do you need materials included?
-                <select name="Materials Included">
-                  <option value="Not Sure">Not Sure</option>
-                  <option value="Yes">Yes, include paint/materials</option>
-                  <option value="No">No, materials are provided</option>
-                </select>
-              </label>
-
-              <label class="full">
-                Project Details
-                <textarea name="Project Details" placeholder="Tell us what needs painted, the condition of the surfaces, colors if known, prep needs, deadline, access details, and anything else important."></textarea>
-              </label>
-            </div>
-
-            <button class="btn btn-primary" type="submit">Send Quote Request</button>
-          </form>
-        </div>
-
-        <aside class="quote-sidebar">
-          <div class="feature-panel">
-            <h3>Contact Directly</h3>
-
-            <div class="mini-list">
-              <div>
-                <strong>Email</strong>
-                <span><a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a></span>
-              </div>
-
-              <div>
-                <strong>Phone</strong>
-                <span><a href="tel:+18656219810">(865) 621-9810</a></span>
-              </div>
-
-              <div>
-                <strong>Best For</strong>
-                <span>Home painting, business painting, rental turns, commercial repaints, exterior painting, and project painting support.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-panel">
-            <h3>Helpful Details to Include</h3>
-
-            <div class="mini-list">
-              <div>
-                <strong>Photos</strong>
-                <span>Photos help us understand the surfaces, prep work, and project size faster.</span>
-              </div>
-
-              <div>
-                <strong>Location</strong>
-                <span>City, state, property address, neighborhood, or jobsite location.</span>
-              </div>
-
-              <div>
-                <strong>Scope</strong>
-                <span>Interior, exterior, rooms, trim, doors, cabinets, ceilings, walls, or touch-ups.</span>
-              </div>
-
-              <div>
-                <strong>Timeline</strong>
-                <span>When you want the project started and when it needs to be finished.</span>
-              </div>
-            </div>
-          </div>
-
-          <div class="feature-panel">
-            <h3>Who We Serve</h3>
-
-            <div class="mini-list">
-              <div>
-                <strong>Residential Buyers</strong>
-                <span>Homeowners, landlords, real estate investors, and rental property owners.</span>
-              </div>
-
-              <div>
-                <strong>Commercial Buyers</strong>
-                <span>Business owners, offices, retail spaces, restaurants, facilities, and property managers.</span>
-              </div>
-
-              <div>
-                <strong>Project Buyers</strong>
-                <span>Builders, contractors, developers, event companies, and companies needing painting support.</span>
-              </div>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <section class="dark-section">
-      <div class="container">
-        <div class="section-heading">
-          <h2>What happens after you request a quote?</h2>
-          <p>
-            We review your project details and follow up with the best next step based on the scope,
-            location, timeline, and type of painting work needed.
-          </p>
-        </div>
-
-        <div class="process-grid">
-          <article class="process-card">
-            <div class="step-num">1</div>
-            <h3>We Review</h3>
-            <p>We look at the project type, location, size, surfaces, timeline, and customer needs.</p>
-          </article>
-
-          <article class="process-card">
-            <div class="step-num">2</div>
-            <h3>We Clarify</h3>
-            <p>If needed, we ask for photos, measurements, access details, colors, or surface conditions.</p>
-          </article>
-
-          <article class="process-card">
-            <div class="step-num">3</div>
-            <h3>We Estimate</h3>
-            <p>We determine the likely labor, materials, prep work, and schedule required.</p>
-          </article>
-
-          <article class="process-card">
-            <div class="step-num">4</div>
-            <h3>We Schedule</h3>
-            <p>If it is a fit, we coordinate the next step to get your painting project moving.</p>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="section-heading">
-          <h2>Common quote requests.</h2>
-          <p>
-            If your project fits one of these categories, send the details and we can help you evaluate the next step.
-          </p>
-        </div>
-
-        <div class="industries">
-          <div class="industry">Interior Painting</div>
-          <div class="industry">Exterior Painting</div>
-          <div class="industry">Commercial Repaints</div>
-          <div class="industry">Residential Repaints</div>
-          <div class="industry">Rental Turns</div>
-          <div class="industry">Property Management</div>
-          <div class="industry">Trim & Doors</div>
-          <div class="industry">Cabinets</div>
-          <div class="industry">Touch-Ups</div>
-          <div class="industry">Punch Lists</div>
-          <div class="industry">Office Painting</div>
-          <div class="industry">Expo / Event Painting</div>
-        </div>
-      </div>
-    </section>
-
-    <section class="cta">
-      <div class="container">
-        <h2>Prefer to email directly?</h2>
-        <p>
-          Send photos, project details, location, and timeline to Matt@UnitedPaintersWW.com
-          or call (865) 621-9810.
+          Use this form to request pricing for residential painting, commercial painting,
+          interior painting, exterior painting, property repaints, touch-ups, or larger project work.
+          The button will open your email app with the request details already filled in.
         </p>
 
-        <a class="btn" href="mailto:Matt@UnitedPaintersWW.com">Email United Painters Worldwide</a>
+        <form class="quote-form" id="quoteForm">
+          <div class="form-grid">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" required />
+            </label>
+
+            <label>
+              Phone
+              <input type="tel" name="phone" placeholder="(865) 621-9810" />
+            </label>
+
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@example.com" required />
+            </label>
+
+            <label>
+              Customer Type
+              <select name="customerType">
+                <option value="Homeowner">Homeowner</option>
+                <option value="Business Owner">Business Owner</option>
+                <option value="Property Manager">Property Manager</option>
+                <option value="Landlord / Investor">Landlord / Investor</option>
+                <option value="General Contractor / Builder">General Contractor / Builder</option>
+                <option value="Facility Manager">Facility Manager</option>
+                <option value="Event / Expo Company">Event / Expo Company</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Project Location
+              <input type="text" name="projectLocation" placeholder="City, state, address, or property location" />
+            </label>
+
+            <label>
+              Project Type
+              <select name="projectType">
+                <option value="Interior Painting">Interior Painting</option>
+                <option value="Exterior Painting">Exterior Painting</option>
+                <option value="Interior and Exterior Painting">Interior and Exterior Painting</option>
+                <option value="Commercial Painting">Commercial Painting</option>
+                <option value="Residential Painting">Residential Painting</option>
+                <option value="Rental / Property Turn">Rental / Property Turn</option>
+                <option value="Cabinets / Trim / Doors">Cabinets / Trim / Doors</option>
+                <option value="Touch-Ups / Punch List">Touch-Ups / Punch List</option>
+                <option value="Convention / Expo Painting">Convention / Expo Painting</option>
+                <option value="Other">Other</option>
+              </select>
+            </label>
+
+            <label>
+              Approximate Size
+              <input type="text" name="approximateSize" placeholder="Example: 2 bedrooms, 1,500 sq ft, office suite, exterior only" />
+            </label>
+
+            <label>
+              Desired Timeline
+              <input type="text" name="timeline" placeholder="ASAP, this week, next month, deadline date" />
+            </label>
+
+            <label>
+              Is the property occupied?
+              <select name="occupied">
+                <option value="Yes">Yes</option>
+                <option value="No">No</option>
+                <option value="Partially">Partially</option>
+                <option value="Not Sure">Not Sure</option>
+              </select>
+            </label>
+
+            <label>
+              Do you need materials included?
+              <select name="materials">
+                <option value="Not Sure">Not Sure</option>
+                <option value="Yes, include paint/materials">Yes, include paint/materials</option>
+                <option value="No, materials are provided">No, materials are provided</option>
+              </select>
+            </label>
+
+            <label class="full">
+              Project Details
+              <textarea name="details" placeholder="Tell us what needs painted, the condition of the surfaces, colors if known, prep needs, deadline, access details, and anything else important."></textarea>
+            </label>
+          </div>
+
+          <button class="btn btn-primary" type="submit">Send Quote Request</button>
+        </form>
       </div>
-    </section>
 
-  </main>
+      <aside class="quote-sidebar">
+        <div class="feature-panel">
+          <h3>Contact Directly</h3>
 
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <div>
-        <div class="footer-brand">United Painters Worldwide</div>
-        <div>Painting services, workforce support, training, crew management, and contract execution.</div>
+          <div class="mini-list">
+            <div>
+              <strong>Email</strong>
+              <span><a href="mailto:Matt@unitedpaintersww.com">Matt@unitedpaintersww.com</a></span>
+            </div>
+
+            <div>
+              <strong>Phone</strong>
+              <span><a href="tel:+18656219810">(865) 621-9810</a></span>
+            </div>
+
+            <div>
+              <strong>Best For</strong>
+              <span>Home painting, business painting, rental turns, commercial repaints, exterior painting, and project painting support.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="feature-panel">
+          <h3>Helpful Details to Include</h3>
+
+          <div class="mini-list">
+            <div>
+              <strong>Photos</strong>
+              <span>Photos help us understand the surfaces, prep work, and project size faster.</span>
+            </div>
+
+            <div>
+              <strong>Location</strong>
+              <span>City, state, property address, neighborhood, or jobsite location.</span>
+            </div>
+
+            <div>
+              <strong>Scope</strong>
+              <span>Interior, exterior, rooms, trim, doors, cabinets, ceilings, walls, or touch-ups.</span>
+            </div>
+
+            <div>
+              <strong>Timeline</strong>
+              <span>When you want the project started and when it needs to be finished.</span>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="dark-section">
+    <div class="container">
+      <div class="section-heading">
+        <h2>What happens after you request a quote?</h2>
+        <p>
+          We review your project details and follow up with the best next step based on the scope,
+          location, timeline, and type of painting work needed.
+        </p>
       </div>
 
-      <div>
-        <a href="mailto:Matt@UnitedPaintersWW.com">Matt@UnitedPaintersWW.com</a>
-        <span> · </span>
-        <a href="tel:+18656219810">(865) 621-9810</a>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="step-num">1</div>
+          <h3>We Review</h3>
+          <p>We look at the project type, location, size, surfaces, timeline, and customer needs.</p>
+        </article>
+
+        <article class="process-card">
+          <div class="step-num">2</div>
+          <h3>We Clarify</h3>
+          <p>If needed, we ask for photos, measurements, access details, colors, or surface conditions.</p>
+        </article>
+
+        <article class="process-card">
+          <div class="step-num">3</div>
+          <h3>We Estimate</h3>
+          <p>We determine the likely labor, materials, prep work, and schedule required.</p>
+        </article>
+
+        <article class="process-card">
+          <div class="step-num">4</div>
+          <h3>We Schedule</h3>
+          <p>If it is a fit, we coordinate the next step to get your painting project moving.</p>
+        </article>
       </div>
     </div>
-  </footer>
-  
-  <script>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="section-heading">
+        <h2>Common quote requests.</h2>
+        <p>
+          If your project fits one of these categories, send the details and we can help you evaluate the next step.
+        </p>
+      </div>
+
+      <div class="industries">
+        <div class="industry">Interior Painting</div>
+        <div class="industry">Exterior Painting</div>
+        <div class="industry">Commercial Repaints</div>
+        <div class="industry">Residential Repaints</div>
+        <div class="industry">Rental Turns</div>
+        <div class="industry">Property Management</div>
+        <div class="industry">Trim & Doors</div>
+        <div class="industry">Cabinets</div>
+        <div class="industry">Touch-Ups</div>
+        <div class="industry">Punch Lists</div>
+        <div class="industry">Office Painting</div>
+        <div class="industry">Expo / Event Painting</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="cta">
+    <div class="container">
+      <h2>Prefer to email directly?</h2>
+      <p>
+        Send photos, project details, location, and timeline to Matt@unitedpaintersww.com
+        or call (865) 621-9810.
+      </p>
+
+      <a class="btn" href="mailto:Matt@unitedpaintersww.com">Email United Painters Worldwide</a>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <div class="footer-brand">United Painters Worldwide</div>
+      <div>Painting services, workforce support, training, crew management, and contract execution.</div>
+    </div>
+
+    <div>
+      <a href="mailto:Matt@unitedpaintersww.com">Matt@unitedpaintersww.com</a>
+      <span> · </span>
+      <a href="tel:+18656219810">(865) 621-9810</a>
+    </div>
+  </div>
+</footer>
+
+<script>
   document.addEventListener("DOMContentLoaded", function () {
     const menuButton = document.querySelector(".mobile-menu-toggle");
     const navLinks = document.querySelector(".nav-links");
@@ -323,10 +301,45 @@
     if (menuButton && navLinks) {
       menuButton.addEventListener("click", function () {
         navLinks.classList.toggle("open");
+
+        const isOpen = navLinks.classList.contains("open");
+        menuButton.setAttribute("aria-expanded", isOpen ? "true" : "false");
+        menuButton.textContent = isOpen ? "×" : "☰";
+      });
+    }
+
+    const quoteForm = document.getElementById("quoteForm");
+
+    if (quoteForm) {
+      quoteForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        const data = new FormData(quoteForm);
+        const subject = "Painting Quote Request - United Painters Worldwide";
+
+        const body =
+          "Name: " + (data.get("name") || "") + "\\n" +
+          "Phone: " + (data.get("phone") || "") + "\\n" +
+          "Email: " + (data.get("email") || "") + "\\n" +
+          "Customer Type: " + (data.get("customerType") || "") + "\\n\\n" +
+          "Project Location: " + (data.get("projectLocation") || "") + "\\n" +
+          "Project Type: " + (data.get("projectType") || "") + "\\n" +
+          "Approximate Size: " + (data.get("approximateSize") || "") + "\\n" +
+          "Desired Timeline: " + (data.get("timeline") || "") + "\\n" +
+          "Occupied Property: " + (data.get("occupied") || "") + "\\n" +
+          "Materials Included: " + (data.get("materials") || "") + "\\n\\n" +
+          "Project Details:\\n" + (data.get("details") || "");
+
+        const mailtoLink =
+          "mailto:Matt@unitedpaintersww.com" +
+          "?subject=" + encodeURIComponent(subject) +
+          "&body=" + encodeURIComponent(body);
+
+        window.location.href = mailtoLink;
       });
     }
   });
 </script>
 
 </body>
-</html></html>
+</html>
